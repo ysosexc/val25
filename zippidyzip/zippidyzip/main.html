@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Ammu ❤️</title>
+    <style>
+        body {
+            text-align: center;
+            background-image: url("skrrr.jpg");
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            font-family: 'Trebuchet MS', sans-serif;
+            height: 100vh; /* Full viewport height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Vertically center content */
+            align-items: center; /* Horizontally center content */
+        }
+
+        #message {
+            font-size: 24px;
+            color: #800080;
+            margin-bottom: 20px; /* Add space between the message and buttons */
+        }
+
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            height: 500px;
+            gap: 20px; /* Space between buttons */
+        }
+
+        .btn {
+            padding: 12px 24px;
+            font-size: 20px;
+            cursor: pointer;
+            border: none;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        #yesButton {
+            background: #800080;
+            color: #ffffff;
+        }
+
+        #noButton {
+            background: #ffffff;
+            color: #800080;
+            border: 2px solid #800080;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="message">Do you love me? 🥺</div>
+    <div class="btn-container" id="btnContainer">
+        <!-- Yes button: Links to index.html -->
+        <a href="index.html">
+            <button class="btn" id="yesButton">Yes</button>
+        </a>
+        <!-- No button: Moves around when hovered -->
+        <button class="btn" id="noButton" onmouseover="moveButton()">No</button>
+    </div>
+
+    <script>
+        function moveButton() {
+            var button = document.getElementById('noButton');
+            var container = document.getElementById('btnContainer');
+
+            // Get the container's width and height
+            var containerWidth = container.offsetWidth;
+            var containerHeight = container.offsetHeight;
+
+            // Get the button's width and height
+            var buttonWidth = button.offsetWidth;
+            var buttonHeight = button.offsetHeight;
+
+            // Calculate the maximum random position for the button within the container
+            var maxX = containerWidth - buttonWidth;
+            var maxY = containerHeight - buttonHeight;
+
+            // Generate random positions for the button
+            var x = Math.random() * maxX;
+            var y = Math.random() * maxY;
+
+            // Move the button to the new position
+            button.style.left = `${x}px`;
+            button.style.top = `${y}px`;
+        }
+    </script>
+
+</body>
+
+</html>

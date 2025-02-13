@@ -1,0 +1,110 @@
+body {
+  background-image: url("skrrr.jpg");
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; 
+}
+#kitty {
+  left: -45px;
+  height: 756px;
+  top: 180px;
+  width: 400px;
+}
+.video-container {
+  position: fixed; 
+  bottom: -140px; 
+  left: 10px; 
+  width: 600px; 
+  height: auto;
+  overflow: hidden; 
+}
+
+img {
+  position: fixed;
+  width: 48%;
+  font-family: 'Trebuchet MS';
+  color: #800080;
+  font-size: 100%;
+  align-self: center;
+  right: -269px;
+  top: 0px;
+  
+}
+
+
+
+.sparkles {
+  position: fixed;
+  top: 600px;
+  right: 526px;
+  color: #800080;
+  font-size: 150%;
+}
+
+.lovenote {
+  position: fixed;
+  width: 500px;
+  top: 300px;
+  right: 500px;
+  font-family: 'Trebuchet MS';
+  color: #800080;
+  line-height: 25px;
+}
+
+p {
+  position: fixed;
+  top: 200px;
+  right: 499px;
+  font-family: 'Trebuchet MS';
+  color: #800080;
+  font-size: 150%;
+}
+
+button {
+  border: #800080;
+  color: #ffffff;
+  position: fixed;
+  right: 693px;
+  top: 120px;
+  background: #800080;
+  font-size: 120%;
+  font-family: 'Trebuchet MS';
+}
+
+video {
+  width: 100%; 
+  height: auto; 
+  max-height: 100%; 
+}
+
+.confetti-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.confetti-pixel {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #800080;
+  animation: confetti 2s ease-out;
+}
+
+@keyframes confetti {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+    top: 0;
+  }
+  100% {
+    transform: scale(0.1);
+    opacity: 0;
+    top: 100vh; 
+  }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for ammu<3</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <img id="fly" src="Purple-Butterfly-PNG-Background (1).png" alt="this is how I feel when I'm loved by you">
+    <div class="video-container">
+        <img id="kitty" src="happy-unscreen.gif" width="300">
+        
+        <audio id="audio" autoplay>
+            <source src="audio.mp3" type="audio/mp3">
+        </audio>
+    </div>
+    <button onclick="playAudio()">click me <3 ! </button>
+
+    <script>
+        var audio = document.getElementById("audio");
+
+        audio.addEventListener('canplaythrough', function() {
+            audio.play();
+        });
+
+        function playAudio() {
+            audio.play().catch(function(error) {
+                console.log("Audio playback failed: ", error);
+            });
+        }
+    </script>
+    <div class="confetti-container"></div>
+    <p>
+        ✧･ﾟ: ✧･ﾟ: 　Happy Valentines Day Princess 　:･ﾟ✧:･ﾟ✧
+    </p>
+    <div class="lovenote">
+        "Yayy we finished one month! I can't believe it, and it's crazy how it feels like it was just yesterday we started talking. You're the sweetest, most patient boy I've met, I love you so much! Sometimes I express too much, sometimes not enough, and sometimes I don't say what's on my mind. Sometimes I say things I don't end up meaning in an attempt to not end up saying what I actually feel, you've been so calm with me through all that. You have the sweetest smile and big brown eyes full of love, hope and dreams. I hope nothing takes that light away from you. I pray that as time passes, we only keep wanting more of each other! I love you <3" 
+    </div>
+    <div class="sparkles">
+        ⭑･ﾟﾟ･:༅｡.｡༅:*ﾟ::✼✿　　✿✼:ﾟ:༅｡.｡༅:･ﾟﾟ･⭑
+    </div> 
+</body>
